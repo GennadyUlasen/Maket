@@ -1,17 +1,22 @@
 @import "fonts.css";
 @import "normalize.css";
 
+
 .container {
     max-width: 1100px;
-    padding: 0 70px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
     font-family: Arial;
     line-height: 22px;
 }
-
+.container-head {
+    margin: 20px auto;
+}
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .box {
@@ -26,7 +31,7 @@
 }
 .menu {
     background-color: #777777;
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 
 .contacts {
@@ -80,6 +85,9 @@
     padding: 10px 20px;
 }
 
+.container-footer {
+    margin-bottom: 20px;
+}
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,4 +139,51 @@
 .box3, .box4 {
     background-color: #dcdcdc;
     padding: 10px 20px;
+}
+
+@media (max-width: 767px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo {
+        order: 1;
+    }
+    .menu {
+        margin: 10px 0;
+        order: 2;
+    }
+    .contacts {
+        order: 3;
+    }
+    .left-section {
+        box-sizing: border-box;
+        float: none;
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .container-grid {
+        display: block;
+    }
+    .box2 {
+        margin: 10px 0;
+    }
+    .footer-content {
+        display: block;
+        text-align: center;
+    }
+    .footer-item {
+        display: block; 
+    }
+    .footer-content ul {
+        margin: 10px 0;
+    }
+    .item2 {
+        margin: 10px 0;
+    }
+}
+
+/* Landscape phones and smaller */
+media (max-width: 480px) {
+
 }
