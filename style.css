@@ -1,0 +1,134 @@
+@import "fonts.css";
+@import "normalize.css";
+
+.container {
+    max-width: 1100px;
+    padding: 0 70px;
+    margin: 0 auto;
+    font-family: Arial;
+    line-height: 22px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 3fr;
+    grid-column-gap: 2em ;
+}
+
+.logo {
+    background-color: #777777;
+    padding: 10px 20px;
+}
+.menu {
+    background-color: #777777;
+    padding: 10px 20px;
+}
+
+.contacts {
+    text-align: end;
+    background-color: #777777;
+    padding: 10px 20px;
+}
+.contacts p {
+    margin: 0;
+}
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+}
+.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    margin: 20px 0;
+}
+
+.left-section {
+    float: left;
+    width: 15%;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #777;   
+    color: #fff;
+}
+.center-section {
+    background-color: #dcdcdc;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+}
+.box2 {
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 2em;
+}
+
+.items-block {
+    color: #fff;
+    background-color: #777;
+}
+
+.footer-content ul {
+    margin: 0;
+}
+
+.footer-item {
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    grid-row-gap: 2em;
+}
+.item1, .item2 {
+    background-color: #777;
+    padding: 10px 20px;
+}
+
+.ul-item {
+    display: inline-block;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.item-list {
+    padding: 10px 20px;
+    background-color: #777;
+    color: #fff;
+    list-style: none;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-gap: 1em;
+}
+
+.box3, .box4 {
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+}
